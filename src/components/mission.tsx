@@ -1,12 +1,12 @@
-// const stats = [
-//   { label: "Transactions every 24 hours", value: "44 million" },
-//   { label: "Assets under holding", value: "$119 trillion" },
-//   { label: "New users annually", value: "46,000" },
-// ];
 
-export const Mission = () => {
+interface HomeProps {
+  id: string;
+}
+
+
+export const Mission: React.FC<HomeProps> = ({id}) => {
   return (
-    <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+    <div id={id} className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
       <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Nuestra misión

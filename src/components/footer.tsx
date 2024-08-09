@@ -2,10 +2,10 @@ import { SVGProps } from "react";
 
 const footerNavigation = {
   main: [
-    { name: 'Home', href: '#' },
-    { name: 'Mision', href: '#' },
-    { name: 'Servicios', href: '#' },
-    { name: 'Contacto', href: '#' },
+    { name: 'Home', href: '#home' },
+    { name: 'Mision', href: '#mission' },
+    { name: 'Servicios', href: '#services' },
+    { name: 'Contacto', href: '#contact' },
   ],
   social: [
     {

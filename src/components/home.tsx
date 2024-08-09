@@ -4,10 +4,13 @@ import image3 from '../assets/3.jpeg';
 import image4 from '../assets/4.jpeg';
 import image5 from '../assets/5.jpeg';
 
+interface HomeProps {
+  id: string;
+}
 
-export const Home = () => {
+export const Home: React.FC<HomeProps> = ({id}) => {
     return (
-        <div className="relative isolate -z-10">
+        <div id={id} className="relative isolate -z-10">
           <svg
             aria-hidden="true"
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"

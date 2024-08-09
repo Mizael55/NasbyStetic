@@ -83,9 +83,12 @@ const products = [
   },
   
 ];
-export const Services = () => {
+interface HomeProps {
+  id: string;
+}
+export const Services: React.FC<HomeProps>  = ({id}) => {
   return (
-    <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
+    <div id={id} className="mx-auto mt-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
       <div className="text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Servicios
