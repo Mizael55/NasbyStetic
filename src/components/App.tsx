@@ -6,6 +6,9 @@ import { Home } from "./home";
 import { Mission } from "./mission";
 import { Services } from "./services";
 import { Contact } from './contact';
+import { useRecoilValue } from "recoil";
+import { loginState } from "../state/login";
+import Login from "./login";
 
 // const team = [
 //   {
@@ -37,8 +40,12 @@ import { Contact } from './contact';
 // ];
 
 export default function App() {
+  const login = useRecoilValue(loginState);
+  
   return (
-    <div className="bg-white">
+    <>
+    {login.isLoggedIn ? (
+      <div className="bg-white">
       {/* Navigation header */}
       <Navigation />
 
@@ -58,6 +65,14 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
-    </div>
-  );
+    </div> ) : (
+      <Login />
+    )
+    }
+
+    </>
+    )
+    
+    
+
 }

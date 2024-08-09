@@ -1,3 +1,5 @@
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { loginState } from "../state/login";
 
 const navigation = [
   { name: "Home", href: "#home" },
@@ -7,6 +9,8 @@ const navigation = [
 ];
 
 export const Navigation = () => {
+  const login = useRecoilValue(loginState);
+  const setIsLogin = useSetRecoilState(loginState);
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
@@ -35,11 +39,16 @@ export const Navigation = () => {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+
+        {login.isLoggedIn && (
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <button 
+            onClick={() => setIsLogin({ isLoggedIn: false })}
+            className="text-sm font-semibold leading-6 text-gray-900">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        )}
       </nav>
     </header>
   );
