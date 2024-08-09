@@ -5,6 +5,7 @@ import { Footer } from "./footer";
 import { Home } from "./home";
 import { Mission } from './mission';
 import { Services } from './services';
+import Contact from './contact';
 
 // const team = [
 //   {
@@ -52,8 +53,11 @@ export default function Example() {
         {/* Values section */}
         < Services />
 
+        {/* Contact*/}
+        <Contact />
+
         {/* Logo cloud */}
-        <div className="relative isolate -z-10 mt-32 sm:mt-48">
+        {/* <div className="relative isolate -z-10 mt-32 sm:mt-48">
           <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
             <svg
               aria-hidden="true"
@@ -128,7 +132,7 @@ export default function Example() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Team section */}
         {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">

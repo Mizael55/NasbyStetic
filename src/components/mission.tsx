@@ -18,38 +18,14 @@ export const Mission = () => {
               su salud y estéticamente verse mejor manteniendo la armonía cuerpo
               mente!
             </p>
-            {/* <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+
+            <div className="mt-6 max-w-xl text-base leading-7 text-gray-700">
+              <p className="text-xl leading-8 text-gray-600">
+                Ademas de brindar un servicio de calidad y calidez a nuestros
+                pacientes.
               </p>
-              <p className="mt-10">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
-            </div> */}
+            </div>
           </div>
-          {/* <div className="lg:flex lg:flex-auto lg:justify-center">
-            <dl className="w-64 space-y-8 xl:w-80">
-              {stats.map((stat) => (
-                <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                  <dt className="text-base leading-7 text-gray-600">
-                    {stat.label}
-                  </dt>
-                  <dd className="text-5xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div> */}
         </div>
       </div>
     </div>
